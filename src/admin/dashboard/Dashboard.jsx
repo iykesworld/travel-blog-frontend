@@ -13,18 +13,21 @@ import BlogsCharts from './BlogsCharts';
 const Dashboard = () => {
     const {user} = useSelector((state)=> state.auth);
     const [query, setQuery]= useState({search: '', category: ''});
-    const {data: blogs=[], error, isLoading} = useFetchBlogsQuery(query);
-    const {data: comments = {}} = useGetCommentsQuery();
-    const {data: users=[]} = useGetUserQuery();
-    // const adminCount = users.users?.filter(user=> user.role === 'admin').length;
-    const adminCount = Array.isArray(users.users)
-        ? users.users.filter(user => user.role === 'admin').length
-        : 0;
-        const userCount = Array.isArray(users.users) ? users.users.length : 0;
+
+    const {data: blogsData, error: blogsError, isLoading: blogsLoading} = useFetchBlogsQuery(query);
+    const blogs = Array.isArray(blogsData?.blogs) ? blogsData.blogs : [];
+
+    const {data: commentsData = {}} = useGetCommentsQuery();
+    const totalComments = commentsData?.totalComment || 0;
+
+    const {data: usersData = {}} = useGetUserQuery();
+    const userList = Array.isArray(usersData?.users) ? usersData.users : [];
+  const adminCount = userList.filter((user) => user.role === "admin").length;
+  const userCount = userList.length;
     
   return (
     <div className='dashboard'>
-        {isLoading && (<div>Loading....</div>)}
+        {blogsLoading && <div>Loading....</div>}
         <div className='dashboard-top'>
             <h1>Hi, {user?.username} </h1>
             <p>Welcome to the admin dashboard</p>
@@ -38,7 +41,7 @@ const Dashboard = () => {
             </div>
             <div className='dasboard-grid-content'>
             <FaBlog className='dashboard-grid-icon icone-two' />
-            <p>{blogs.length} Blogs</p>
+            <p>{blogs.length} Blog{blogs.length > 1 && "s"}</p>
             </div>
             <div className='dasboard-grid-content'>
             <RiAdminLine className='dashboard-grid-icon icone-three' />
@@ -46,7 +49,7 @@ const Dashboard = () => {
             </div>
             <div className='dasboard-grid-content'>
             <FaComment className='dashboard-grid-icon icone-four' />
-            <p>{comments?.totalComment || 0} Comments</p>
+            <p>{totalComments} Comment{totalComments > 1 && "s"}</p>
             </div>
         </div>
         {/* charts */}
