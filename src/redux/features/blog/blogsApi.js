@@ -3,7 +3,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 export const blogApi = createApi({
     reducerPath: 'blogApi',
     baseQuery: fetchBaseQuery({ 
-        baseUrl: 'http://localhost:5000/api',
+        baseUrl: 'https://travel-blog-backend-mzab.onrender.com/api',
         credentials: 'include',
         prepareHeaders: (headers, { getState }) => {
           const token = getState().auth?.token;
