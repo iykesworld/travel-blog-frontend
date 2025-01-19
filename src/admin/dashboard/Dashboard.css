@@ -1,0 +1,70 @@
+.dashboard{
+    padding: 10px;
+}
+.dashboard-top{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.dashboard-grid{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.dasboard-grid-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 40px;
+}
+.dasboard-grid-content p{
+    font-size: 12px;
+}
+.dashboard-grid-icon{
+    width: 20px;
+    height: 20px;
+}
+.icone-one{
+    color: rgb(217, 128, 128);
+}
+.icone-two{
+    color: rgb(150, 185, 173);
+}
+.icone-three{
+    color: rgb(116, 116, 142);
+}
+.icone-four{
+    color: rgb(146, 159, 132);
+}
+.dasboard-grid-content:nth-child(1){
+    background-color: rgb(185, 201, 201);
+}
+.dasboard-grid-content:nth-child(2){
+    background-color: rgb(227, 203, 180);
+}
+.dasboard-grid-content:nth-child(3){
+    background-color: rgb(212, 214, 238);
+}
+.dasboard-grid-content:nth-child(4){
+    background-color: rgb(233, 176, 183);
+}
+/* .blogschart{
+    width: 100%;
+    height: 100%;
+} */
+.blogschart h2{
+    margin-bottom: 10px;
+}
+.chart-wrapper{
+    height: 350px;
+    width: 100%;
+    background-color: rgb(234, 232, 232);
+    padding: 10px;
+}
+.responsive-chart{
+    width: 100%;
+    height: 300px;
+}

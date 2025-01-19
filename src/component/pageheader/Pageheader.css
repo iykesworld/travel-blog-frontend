@@ -1,0 +1,13 @@
+.pageheader{
+    width: 100%;
+    background-image: url('../../assets/pageHeader.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    margin: 80px 0px 10px 0px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

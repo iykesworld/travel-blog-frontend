@@ -1,0 +1,82 @@
+.addpost{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+.addpost-form-title label{
+    font-weight: 700;
+}
+.adpost-form-title-input{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(238, 237, 237);
+    outline: none;
+    border: none;
+    margin: 10px 0px;
+}
+.addpost-form-detailswrapper{
+    display: flex;
+}
+.addpost-form-detail-left{
+    width: 100%;
+}
+.addpost-form-detail-left p:nth-child(1){
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.addpost-form-detail-right{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    padding: 10px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25),
+                -4px -4px 4px rgba(0, 0, 0, 0.25);
+}
+.addpost-form-detail-right p{
+    font-weight: 700;
+}
+.addpost-form-detail-right label{
+    font-weight: 700;
+}
+.addpost-form-detail-right input{
+    display: block;
+    padding: 10px;
+    width: 100%;
+    margin: 10px 0px;
+    background-color: rgb(238, 237, 237);
+    outline: none;
+    border: none;
+}
+.addpost-form-detail-right textarea{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(238, 237, 237);
+    outline: none;
+    border: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  appearance: textfield;
+}
+
+.addpost-form-btn{
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    background-color: var(--tr-PR);
+    color: var(--tr-WH);
+    font-size: 16px;
+    border: none;
+}
+.addpost-form-btn:hover{
+    background-color: var(--tr-SC);
+}

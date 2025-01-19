@@ -1,0 +1,133 @@
+.about{
+    display: flex;
+    flex-direction: column;
+    margin: 40px 134px;
+}
+.about-top{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.about-top-details{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.about-top-image{
+    width: 600px;
+}
+.about-top-image img{
+    width: 100%;
+}
+.about-purpose{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.about-purpose-image{
+    width: 600px;
+    height: 600px;
+}
+.about-purpose-image img{
+    width: 100%;
+    height: 100%;
+}
+.about-purpose-details{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.about-funfacts{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.funfacts-details{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.funfact-image{
+    width: 400px;
+    height: 400px;
+}
+.funfact-image img{
+    width: 100%;
+    height: 100%;
+}
+@media (max-width: 1024px) {
+    .about{
+        margin: 40px 50px;
+    }
+}
+@media (max-width: 820px) {
+    .about{
+        margin: 40px 10px;
+    }
+}
+@media (max-width: 431px) {
+    .about{
+        gap: 40px;
+    }
+    .about-top{
+        flex-direction: column;
+    }
+    .about-top-image{
+        width: 400px;
+    }
+    .about-top-image img{
+        width: 100%;
+    }
+    .about-top p{
+        font-size: 20px;
+    }
+    .about-purpose{
+        flex-direction: column-reverse;
+    }
+    .about-purpose-image{
+        width: 400px;
+        height: 400px;
+    }
+    .about-purpose-image img{
+        width: 100%;
+        height: 100%;
+    }
+    .about-purpose-details p{
+        font-size: 20px;
+    }
+    .about-funfacts{
+        flex-direction: column;
+    }
+    .funfacts-list li{
+        font-size: 20px;
+    }
+}
+@media (max-width: 376px) {
+    .about-top-image{
+        width: 300px;
+    }
+    .about-top-image img{
+        width: 100%;
+    }
+    
+    .about-purpose-image{
+        width: 300px;
+        height: 300px;
+    }
+    .about-purpose-image img{
+        width: 100%;
+        height: 100%;
+    }
+    .funfact-image{
+        width: 300px;
+        height: 300px;
+    }
+    .funfact-image img{
+        width: 100%;
+        height: 100%;
+    }
+    .about-funfacts{
+        gap: 20px;
+    }
+}

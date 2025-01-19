@@ -1,0 +1,16 @@
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px;
+}
+.page-item{
+    list-style: none;
+}
+.page-button{
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}

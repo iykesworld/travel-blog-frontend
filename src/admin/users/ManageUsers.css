@@ -1,0 +1,66 @@
+.manageUsers{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 100%;
+}
+.manageUsers-top{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+.manageUsers-top button{
+    background-color: var(--tr-SC);
+    padding: 0px 10px;
+    color: var(--tr-WH);
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+thead{
+    text-align: left;
+}
+.manageUsers-thead-roll th{
+    padding: 10px;
+    border-top: 1px solid var(--tr-GR);
+    border-bottom: 1px solid var(--tr-GR);
+}
+.manageUsers-tablebody-roll th, td{
+    padding: 10px;
+    text-align: left;
+}
+.manageUsers-table-data-link{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.manageUsers-table-data-btn{
+    background-color: rgb(180, 76, 76);
+    padding: 0px 5px;
+    color: var(--tr-WH);
+    border: none;
+    cursor: pointer;
+}
+
+/* update user modal */
+.updateusermodal{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+.updateusermodal-wrapper{
+    background-color: #fefefe;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}

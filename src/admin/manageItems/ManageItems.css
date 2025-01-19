@@ -1,0 +1,43 @@
+.manageItems{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 100%;
+}
+.manageItems-top{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+.manageItems-top button{
+    background-color: var(--tr-SC);
+    padding: 0px 10px;
+    color: var(--tr-WH);
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+thead{
+    text-align: left;
+}
+.thead-roll th{
+    padding: 10px;
+    border-top: 1px solid var(--tr-GR);
+    border-bottom: 1px solid var(--tr-GR);
+}
+.tablebody-roll th, td{
+    padding: 10px;
+    text-align: left;
+}
+.table-data-link{
+    text-decoration: none;
+    color: var(--tr-BL);
+}
+.table-data-btn{
+    background-color: rgb(180, 76, 76);
+    padding: 0px 5px;
+    color: var(--tr-WH);
+    border: none;
+    cursor: pointer;
+}
