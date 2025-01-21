@@ -9,6 +9,8 @@
 }
 .dashboard-grid{
     display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
     width: 100%;
     justify-content: space-between;
     margin-bottom: 20px;
@@ -51,10 +53,7 @@
 .dasboard-grid-content:nth-child(4){
     background-color: rgb(233, 176, 183);
 }
-/* .blogschart{
-    width: 100%;
-    height: 100%;
-} */
+
 .blogschart h2{
     margin-bottom: 10px;
 }

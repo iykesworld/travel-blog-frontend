@@ -73,3 +73,35 @@
         margin: 100px 10px;
     }
 }
+@media (max-width: 431px) {
+    /* admin layout */
+    .adminlayout{
+    flex-direction: column;
+    margin: 100px 5px;
+}
+/* admin navigation */
+.adminNavigation{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    height: 20vh;
+    width: 100%;
+    gap: 10px;
+}
+.admin-icon-details{
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.adminNavigation-list-wrappre{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.adminNavigation-list{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 20px;
+}
+}
